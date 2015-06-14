@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-<title>1. Loading and preprocessing the data</title>
+<title>    keep_md: true</title>
 
 <script type="text/javascript">
 window.onload = function() {
@@ -201,6 +201,22 @@ hr {
 </head>
 
 <body>
+<p>Hey this is strange. The next lines between the <code>---</code> are given by default in the .Rmd file to control the overall title, author and some options.<br/>
+When knitting from within RStudio, they are nicely translated to correct markdown indicating a 1st heading and inserting the author.<br/>
+But when knitting from console using <code>knit2html()</code>, they are not translated and left over in a kind of disturbing way.<br/>
+But as it was explicitly asked to use <code>knit2html()</code> instead of RStudio&#39;s built-in knitting, I leave the artefact as is.</p>
+
+<p>Start reading at &ldquo;1. Loading &hellip;&rdquo;</p>
+
+<hr/>
+
+<p>title: &ldquo;Reproducible Research: Peer Assessment 1&rdquo;
+author: Carsten Langer
+output: 
+  html_document:</p>
+
+<h2>    keep_md: true</h2>
+
 <h2>1. Loading and preprocessing the data</h2>
 
 <h3>Tasks</h3>
@@ -218,13 +234,7 @@ hr {
 Use data.table and thus <code>fread()</code> instead of data frame and <code>read.csv()</code>.</p>
 
 <pre><code class="r">require(data.table, quietly = T)
-</code></pre>
-
-<pre><code>## data.table 1.9.4  For help type: ?data.table
-## *** NB: by=.EACHI is now explicit. See README to restore previous behaviour.
-</code></pre>
-
-<pre><code class="r">require(dplyr, quietly = T, warn.conflicts = F)
+require(dplyr, quietly = T, warn.conflicts = F)
 require(ggplot2, quietly = T)
 
 local.zip.file &lt;- &quot;activity.zip&quot;

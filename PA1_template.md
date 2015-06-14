@@ -1,3 +1,10 @@
+Hey this is strange. The next lines between the `---` are given by default in the .Rmd file to control the overall title, author and some options.  
+When knitting from within RStudio, they are nicely translated to correct markdown indicating a 1st heading and inserting the author.  
+But when knitting from console using `knit2html()`, they are not translated and left over in a kind of disturbing way.  
+But as it was explicitly asked to use `knit2html()` instead of RStudio's built-in knitting, I leave the artefact as is.
+
+Start reading at "1. Loading ..."
+
 ---
 title: "Reproducible Research: Peer Assessment 1"
 author: Carsten Langer
@@ -19,14 +26,6 @@ Use data.table and thus `fread()` instead of data frame and `read.csv()`.
 
 ```r
 require(data.table, quietly = T)
-```
-
-```
-## data.table 1.9.4  For help type: ?data.table
-## *** NB: by=.EACHI is now explicit. See README to restore previous behaviour.
-```
-
-```r
 require(dplyr, quietly = T, warn.conflicts = F)
 require(ggplot2, quietly = T)
 
