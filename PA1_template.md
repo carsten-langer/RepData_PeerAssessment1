@@ -26,6 +26,14 @@ Use data.table and thus `fread()` instead of data frame and `read.csv()`.
 
 ```r
 require(data.table, quietly = T)
+```
+
+```
+## data.table 1.9.4  For help type: ?data.table
+## *** NB: by=.EACHI is now explicit. See README to restore previous behaviour.
+```
+
+```r
 require(dplyr, quietly = T, warn.conflicts = F)
 require(ggplot2, quietly = T)
 

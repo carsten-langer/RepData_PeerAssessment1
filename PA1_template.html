@@ -234,7 +234,13 @@ output:
 Use data.table and thus <code>fread()</code> instead of data frame and <code>read.csv()</code>.</p>
 
 <pre><code class="r">require(data.table, quietly = T)
-require(dplyr, quietly = T, warn.conflicts = F)
+</code></pre>
+
+<pre><code>## data.table 1.9.4  For help type: ?data.table
+## *** NB: by=.EACHI is now explicit. See README to restore previous behaviour.
+</code></pre>
+
+<pre><code class="r">require(dplyr, quietly = T, warn.conflicts = F)
 require(ggplot2, quietly = T)
 
 local.zip.file &lt;- &quot;activity.zip&quot;
