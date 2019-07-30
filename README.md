@@ -1,3 +1,5 @@
+Project was used for Coursera course on Data Science. It is now archived.
+
 ## Introduction
 
 It is now possible to collect a large amount of data about personal
